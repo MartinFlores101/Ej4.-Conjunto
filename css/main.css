@@ -6,6 +6,7 @@ body{  /*General*/
 /*navegacion, enlaces y listas*/
 nav{
     background-color: darkslateblue;
+    border-radius: 0.5em;
 }
 
 nav ul li{
@@ -22,4 +23,28 @@ nav ul li a{
 
 nav a:hover{
     color: lightskyblue;
+}
+
+/*Contenedores*/
+#conteiner{
+    width: 95%;
+    margin: 1em auto;
+    border-radius: 0.5em;
+    background:rosybrown;
+}
+
+#div-izq{
+    width: 70%;
+    float:left;
+    margin: 1em auto;
+    border-radius: 0.5em;
+    background: springgreen;
+}
+
+#div-der{
+    width: 30%;
+    float:right;
+    margin: 1em auto;
+    border-radius: 0.5em;
+    background: lightsalmon;
 }
