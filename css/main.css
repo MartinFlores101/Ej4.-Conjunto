@@ -1,4 +1,15 @@
-body{
+body{  /*General*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: azure;
 }
+
+/*Encabezado*/
+#contanier-header{
+    background: darkslateblue ;
+}
+
+/*enlaces*/
+a{text-decoration: none;}
+a:visited {text-decoration:none; color:white;}
+a:active {text-decoration:none; color: white;} 
+a:hover {text-decoration: none; color: lightcoral}
