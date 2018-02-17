@@ -34,7 +34,7 @@ nav[id="main-nav"] a:hover{
 }
 
 .playlist {
-    height: 32em;
+    height: 31.5em;
 }
 
 #div-izq{
@@ -92,7 +92,17 @@ video {
     width: 100%;
 }
 
+img[id="img-inicio"] {
+    height: 24em;
+    width: 92%;
+}
+
+#div-video {
+    text-align: center;
+}
+
 p[class="title-mini-desc"] {
+    text-transform: uppercase;
     color: blue;
 }
 
@@ -103,6 +113,8 @@ p[class="desc-mini-desc"] {
 #desc-video {
     padding: 15px;
     overflow: auto;
+    background-color: chocolate;
+    height: 5em;
 }
 
 #pie-pagina {
