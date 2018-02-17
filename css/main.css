@@ -30,7 +30,11 @@ nav a:hover{
     width: 95%;
     margin: 1em auto;
     border-radius: 0.5em;
-    background:rosybrown;
+    background:blueviolet;
+}
+
+.playlist {
+    height: 30em;
 }
 
 #div-izq{
