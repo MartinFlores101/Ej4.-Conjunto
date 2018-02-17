@@ -1,4 +1,4 @@
-function setDesciptionVideo (op) {
+function setDescriptionVideo (op) {
     console.log('Video: '+op);
 }
 
