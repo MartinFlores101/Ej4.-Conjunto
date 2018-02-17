@@ -11,11 +11,9 @@ videoDes = [
     'Esta vez son los recuerdos de Jet los que salen a flote. Su antiguo trabajo en el ISSP y el nombre de la mujer con la que trabajaba: Alisa. A la que va a visitar a Ganímedes. Todo mezclado con una persecución y la nueva vida de esta mujer. '
 ];
 
-function setDescriptionVideo (op) {
-    document.getElementById('desc-video').innerHTML = videoDes[op-1];
-}
 
-function setVideo (op) {
+function loadVideo(op) {
+    document.getElementById('desc-video').innerHTML = videoDes[op-1];
     document.getElementById('div-video').innerHTML = (
         "<video src='video/v"+op+".mkv' controls autoplay> </video>"
     );
