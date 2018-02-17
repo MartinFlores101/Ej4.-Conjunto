@@ -17,4 +17,15 @@ function loadVideo(op) {
     document.getElementById('div-video').innerHTML = (
         "<video src='video/v"+op+".mkv' controls autoplay> </video>"
     );
+    
+    var iconsplay = document.getElementsByClassName('div-icon-play');
+    var contvideo = document.getElementsByClassName('cont-videoop');
+
+    for (let i = 0; i < iconsplay.length; i++) {
+        iconsplay[i].innerHTML = '';
+        contvideo[i].style.background = '';
+    }
+
+    iconsplay[op-1].innerHTML = '<img class="iconimg" src="img/play2.png" alt="">';
+    contvideo[op-1].style.background = '#ff6600';
 }
