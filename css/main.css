@@ -34,7 +34,7 @@ nav a:hover{
 }
 
 .playlist {
-    height: 30em;
+    height: 32em;
 }
 
 #div-izq{
@@ -92,11 +92,14 @@ video {
     width: 100%;
 }
 
-h1[class="title-mini-desc"] {
-    font-size: 1em;
+p[class="title-mini-desc"] {
     color: blue;
 }
 
 p[class="desc-mini-desc"] {
-    font-size: 5em;
+    font-size: .7em;
+}
+
+#desc-video {
+    padding: 15px;
 }
