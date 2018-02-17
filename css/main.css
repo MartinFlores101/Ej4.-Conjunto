@@ -86,3 +86,17 @@ li {
     float: right;
     background-color:teal;
 }
+
+video {
+    height: 25em;
+    width: 100%;
+}
+
+h1[class="title-mini-desc"] {
+    font-size: 1em;
+    color: blue;
+}
+
+p[class="desc-mini-desc"] {
+    font-size: 5em;
+}
