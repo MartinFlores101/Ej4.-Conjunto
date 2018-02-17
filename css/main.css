@@ -4,16 +4,16 @@ body{  /*General*/
 }
 
 /*navegacion, enlaces y listas*/
-/*nav{
+nav[id="main-nav"]{
     background-color: darkslateblue;
     border-radius: 0.5em;
 }
 
-nav ul li{
+nav[id="main-nav"] ul[id="ban-list"] li[class="op_list"] {
     display: inline-block;
 }
 
-nav ul li a{
+nav[id="main-nav"] ul[id="ban-list"] li[class="op_list"] a{
     color: white;
     display: block;
     line-height: 2em;
@@ -21,9 +21,9 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav a:hover{
+nav[id="main-nav"] a:hover{
     color: lightskyblue;
-}*/
+}
 
 /*Contenedores*/
 #conteiner{
@@ -102,4 +102,9 @@ p[class="desc-mini-desc"] {
 
 #desc-video {
     padding: 15px;
+    overflow: auto;
+}
+
+#pie-pagina {
+    text-align: center;
 }
