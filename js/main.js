@@ -19,13 +19,13 @@ function loadVideo(op) {
     );
     
     var iconsplay = document.getElementsByClassName('div-icon-play');
-    var contvideo = document.getElementsByClassName('cont-videoop');
+    //var contvideo = document.getElementsByClassName('cont-videoop');
 
     for (let i = 0; i < iconsplay.length; i++) {
         iconsplay[i].innerHTML = '';
-        contvideo[i].style.background = '';
+        //contvideo[i].style.background = '';
     }
 
     iconsplay[op-1].innerHTML = '<img class="iconimg" src="img/play2.png" alt="">';
-    contvideo[op-1].style.background = '#ff6600';
+    //contvideo[op-1].style.background = '#ff6600';
 }
