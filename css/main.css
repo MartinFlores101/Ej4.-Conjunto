@@ -62,3 +62,27 @@ nav a:hover{
 li {
     list-style-type: none;
 }
+
+#nav-playlist {
+    text-align: left;
+    margin-left: -2.5em;
+}
+
+.cont-videoop {
+    padding: 1em;
+}
+
+.cont-videoop:hover {
+    background-color: blueviolet;
+}
+
+#title-playlist {
+    text-align: center;
+    background-color: lightslategrey;
+    padding: 1.5em;
+}
+
+.mini-desc-video {
+    float: right;
+    background-color:teal;
+}
