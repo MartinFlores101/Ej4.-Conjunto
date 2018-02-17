@@ -4,7 +4,7 @@ body{  /*General*/
 }
 
 /*navegacion, enlaces y listas*/
-nav{
+/*nav{
     background-color: darkslateblue;
     border-radius: 0.5em;
 }
@@ -23,7 +23,7 @@ nav ul li a{
 
 nav a:hover{
     color: lightskyblue;
-}
+}*/
 
 /*Contenedores*/
 #conteiner{
@@ -51,4 +51,14 @@ nav a:hover{
     margin: 1em auto;
     border-radius: 0.5em;
     background: lightsalmon;
+    overflow: auto;
+}
+
+.img-min {
+    height: 3.6em;
+    width: 5em;
+}
+
+li {
+    list-style-type: none;
 }
