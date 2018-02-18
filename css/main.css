@@ -141,3 +141,17 @@ p[class="desc-mini-desc"] {
   /*.div-icon-play {
   background-color: darkgreen;
 }*/
+
+.mini-desc-nombre{
+    text-align: center;
+    /*background-color:teal;*/
+    background: darkslateblue;
+    color: white;
+}
+
+p[class="nombre"] {
+    text-align: center;
+    text-transform: uppercase;
+    /*color: blue;*/
+    color: wheat;
+}
