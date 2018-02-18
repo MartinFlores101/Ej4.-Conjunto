@@ -42,7 +42,8 @@ nav[id="main-nav"] a:hover{
     float:left;
     margin: 1em auto;
     border-radius: 0.5em;
-    background: springgreen;
+    /*background: springgreen;*/
+    background:blueviolet;
 }
 
 #div-der{
@@ -50,7 +51,8 @@ nav[id="main-nav"] a:hover{
     float:right;
     margin: 1em auto;
     border-radius: 0.5em;
-    background: lightsalmon;
+    /*background: lightsalmon;*/
+    background: darkslateblue;
     overflow: auto;
 }
 
@@ -73,7 +75,11 @@ li {
 }
 
 .cont-videoop:hover {
-    background-color: blueviolet;
+    background-color: lightslategrey;
+}
+
+.mini-desc-video:hover{
+    background-color: lightslategrey;
 }
 
 #title-playlist {
@@ -82,9 +88,13 @@ li {
     padding: 1.5em;
 }
 
+
+
 .mini-desc-video {
     float: right;
-    background-color:teal;
+    /*background-color:teal;*/
+    background: darkslateblue;
+    color: white;
 }
 
 video {
@@ -103,7 +113,8 @@ img[id="img-inicio"] {
 
 p[class="title-mini-desc"] {
     text-transform: uppercase;
-    color: blue;
+    /*color: blue;*/
+    color: wheat;
 }
 
 p[class="desc-mini-desc"] {
@@ -113,7 +124,8 @@ p[class="desc-mini-desc"] {
 #desc-video {
     padding: 15px;
     overflow: auto;
-    background-color: chocolate;
+    /*background-color: chocolate;*/
+    background: sandybrown;
     height: 4.5em;
 }
 
