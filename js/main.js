@@ -45,6 +45,15 @@ function iniciar(){
     },false);
 
     cajadatos.addEventListener("drop",soltado,false);
+
+    /*playlist = document.getElementById('div-der');
+    playlist.addEventListener('dragover', function (e) {
+        playlist = document.getElementById('div-der');
+        playlist.style.background = '#ff0000';
+
+        headerpl = document.getElementById('title-playlist');
+        headerpl.innerHTML = '<h1>PlayList + </h1>';
+    });*/
 }
 
 function soltado(e){
@@ -61,6 +70,21 @@ function soltado(e){
                 'src="', e2.target.result,
                 '" title="', escape(data.name), '"/>'].join('');
             //console.log(e2.target.result);  // si pongo esto truena no se porque xd
+
+            navspwan = document.getElementById('nav-spwan');
+            navspwan.innerHTML += (
+                '<li>'+
+                    '<div class="cont-videoop" onclick="loadVideo('+');">'+
+                        '<div class="div-icon-play">'+
+                        '</div>'+
+                        '<img class="img-min" src="img/icon_video.png" alt="">'+
+                        '<div class="mini-desc-video">'+
+                            '<p class="title-mini-desc">'+escape(data.name)+'</p>'+
+                            '<p class="desc-mini-desc">'+escape(data.name)+'</p>'+
+                        '</div>'+
+                    '</div>'+
+                '</li>'
+            );
 		};
     })(file);
 
