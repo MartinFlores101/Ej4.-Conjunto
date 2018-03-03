@@ -39,6 +39,8 @@ function iniciar(){
                             },false);
 
     cajadatos.addEventListener('dragover',function(e){
+        div = document.getElementById("div-video");
+        div.style.background = "#ff6600"; // Color del div cuando estas sobre el div del video
         e.preventDefault();
     },false);
 
@@ -53,12 +55,16 @@ function soltado(e){
 
 	reader.onload= (function(data){
 		return function(e2){
-			cajadatos.innerHTML = ['<video width="720" height="404" controls autoplay type="video/x-matroska" src="', e2.target.result,
-                        '" title="', escape(data.name), '"/>'].join('');
+            cajadatos.innerHTML = [
+                '<video width="720"',
+                ' height="404" controls autoplay type="video/x-matroska" ',
+                'src="', e2.target.result,
+                '" title="', escape(data.name), '"/>'].join('');
+            //console.log(e2.target.result);  // si pongo esto truena no se porque xd
 		};
     })(file);
 
-        reader.readAsDataURL(file);
+    reader.readAsDataURL(file);
 }
             
 window.addEventListener('load',iniciar,false);
