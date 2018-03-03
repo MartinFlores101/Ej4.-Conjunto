@@ -93,8 +93,8 @@ li {
 .mini-desc-video {
     float: right;
     /*background-color:teal;*/
-    background: darkslateblue;
-    color: white;
+    /*background: darkslateblue;*/
+    /*color: white;*/
 }
 
 video {
