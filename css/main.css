@@ -37,6 +37,11 @@ nav[id="main-nav"] a:hover{
     height: 31.5em;
 }
 
+#pds {
+    overflow: scroll;
+    height: 23em;
+}
+
 #div-izq{
     width: 70%;
     float:left;
@@ -53,7 +58,7 @@ nav[id="main-nav"] a:hover{
     border-radius: 0.5em;
     /*background: lightsalmon;*/
     background: darkslateblue;
-    overflow: auto;
+    /*overflow: auto;*/
 }
 
 .img-min {
@@ -65,12 +70,13 @@ li {
     list-style-type: none;
 }
 
-#nav-playlist {
+#nav-playlist, #pds {
     text-align: left;
-    margin-left: -2.5em;
+    /*margin-left: -2.5em;*/
 }
 
 .cont-videoop {
+    margin-left: -2.5em;
     padding: 1em;
 }
 
@@ -91,7 +97,7 @@ li {
 
 
 .mini-desc-video {
-    float: right;
+    /*float: right;*/
     /*background-color:teal;*/
     /*background: darkslateblue;*/
     /*color: white;*/
