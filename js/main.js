@@ -11,6 +11,7 @@ videoDes = [
     'Esta vez son los recuerdos de Jet los que salen a flote. Su antiguo trabajo en el ISSP y el nombre de la mujer con la que trabajaba: Alisa. A la que va a visitar a Ganímedes. Todo mezclado con una persecución y la nueva vida de esta mujer. '
 ];
 
+srcv = [];
 
 function loadVideo(op) {
     document.getElementById('desc-video').innerHTML = videoDes[op-1];
@@ -27,6 +28,25 @@ function loadVideo(op) {
     }
 
     iconsplay[op-1].innerHTML = '<img class="iconimg" src="img/play2.png" alt="">';
+    //contvideo[op-1].style.background = '#ff6600';
+}
+
+function loadXVideo(op) {
+    document.getElementById('desc-video').innerHTML = 'Descripción';
+    document.getElementById('div-video').innerHTML = (
+        "<video src='"+
+        srcv[op-1]
+        +"' controls autoplay> </video>"
+    );
+    var iconsplay = document.getElementsByClassName('div-icon-play');
+    //var contvideo = document.getElementsByClassName('cont-videoop');
+
+    for (let i = 0; i < iconsplay.length; i++) {
+        iconsplay[i].innerHTML = '';
+        //contvideo[i].style.background = '';
+    }
+
+    iconsplay[10+op-1].innerHTML = '<img class="iconimg" src="img/play2.png" alt="">';
     //contvideo[op-1].style.background = '#ff6600';
 }
 
@@ -64,23 +84,25 @@ function soltado(e){
 
 	reader.onload= (function(data){
 		return function(e2){
+            name = data.name;
+            srcv.push(e2.target.result);
             cajadatos.innerHTML = [
                 '<video width="720"',
                 ' height="404" controls autoplay type="video/x-matroska" ',
                 'src="', e2.target.result,
-                '" title="', escape(data.name), '"/>'].join('');
+                '" title="', name, '"/>'].join('');
             //console.log(e2.target.result);  // si pongo esto truena no se porque xd
 
             navspwan = document.getElementById('nav-spwan');
             navspwan.innerHTML += (
                 '<li>'+
-                    '<div class="cont-videoop" onclick="loadVideo('+');">'+
+                    '<div class="cont-videoop" onclick="loadXVideo('+srcv.length+');">'+
                         '<div class="div-icon-play">'+
                         '</div>'+
                         '<img class="img-min" src="img/icon_video.png" alt="">'+
                         '<div class="mini-desc-video">'+
-                            '<p class="title-mini-desc">'+escape(data.name)+'</p>'+
-                            '<p class="desc-mini-desc">'+escape(data.name)+'</p>'+
+                            '<p class="title-mini-desc">'+name+'</p>'+
+                            '<p class="desc-mini-desc">'+name+'</p>'+
                         '</div>'+
                     '</div>'+
                 '</li>'
