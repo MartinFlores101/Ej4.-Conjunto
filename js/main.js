@@ -29,3 +29,38 @@ function loadVideo(op) {
     iconsplay[op-1].innerHTML = '<img class="iconimg" src="img/play2.png" alt="">';
     //contvideo[op-1].style.background = '#ff6600';
 }
+
+//////////////////////////  Drag and drop   /////////////////////////////////
+function iniciar(){
+    cajadatos=document.getElementById("div-video");
+    
+    cajadatos.addEventListener('dragenter',function(e){
+                            e.preventDefault();
+                            },false);
+
+    cajadatos.addEventListener('dragover',function(e){
+        e.preventDefault();
+    },false);
+
+    cajadatos.addEventListener("drop",soltado,false);
+}
+
+function soltado(e){
+    e.preventDefault();
+    var files=e.dataTransfer.files;
+    var file=files[0];
+    var reader=new FileReader();
+
+	reader.onload= (function(data){
+		return function(e2){
+			cajadatos.innerHTML = ['<video width="720" height="404" controls autoplay type="video/x-matroska" src="', e2.target.result,
+                        '" title="', escape(data.name), '"/>'].join('');
+		};
+    })(file);
+
+        reader.readAsDataURL(file);
+}
+            
+window.addEventListener('load',iniciar,false);
+
+/////// Agregar al la play list ///// 
